@@ -1,10 +1,9 @@
-Here’s a sample README file for your chat application. You can modify it as necessary to fit your project's specifics:
 
-```markdown
+
 # Real-Time Chat Application
 
 A real-time chat application built using **Node.js**, **Express**, and **Socket.io**. This application allows users to join a chat room, see who is currently online, and send messages in real time. 
-
+![image](chat-screenshot.png)
 ## Features
 
 - **Real-Time Messaging**: Users can send and receive messages instantly.
@@ -84,4 +83,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Subramanya T N**  
 Bangalore, India  
 [Your LinkedIn Profile](https://www.linkedin.com/in/subramanya-tn-b399011a8/)
-```
