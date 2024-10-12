@@ -37,7 +37,8 @@ A real-time chat application built using **Node.js**, **Express**, and **Socket.
 2. **Install dependencies**:
 
    ```bash
-   npm install
+   npm init -y
+   npm install express socket.io
    ```
 
 ### Running the Application
@@ -45,7 +46,7 @@ A real-time chat application built using **Node.js**, **Express**, and **Socket.
 1. **Start the server**:
 
    ```bash
-   node app.js
+   node app.js or node start
    ```
 
 2. **Open your browser** and go to `http://localhost:3000` to access the chat application.
