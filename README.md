@@ -1,12 +1,11 @@
 
 
-# Real-Time Chat Application
+# Real-Time Chat Application with Persistent Messaging
 
-A real-time chat application built using **Node.js**, **Express**, and **Socket.io**. This application allows users to join a chat room, see who is currently online, and send messages in real time. 
-![image](chat-screenshot.png)
 ## Features
 
 - **Real-Time Messaging**: Users can send and receive messages instantly.
+- **Persistent Messaging**: Messages are stored in a database and are available when users reconnect.
 - **User List**: New users can see all previously connected users (who haven't disconnected) when they join.
 - **Notifications**: Users receive notifications for new messages.
 - **User Activity Status**: Displays the current online status of users.
@@ -16,6 +15,7 @@ A real-time chat application built using **Node.js**, **Express**, and **Socket.
 
 - **Backend**: Node.js, Express
 - **Real-Time Communication**: Socket.io
+- **Database**: MongoDB for persistent messaging
 - **Frontend**: HTML, CSS, JavaScript
 
 ## Getting Started
