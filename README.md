@@ -5,11 +5,19 @@
 ## Features
 
 - **Real-Time Messaging**: Users can send and receive messages instantly.
+  ![Real-Time Messaging](first.png)
+
 - **Persistent Messaging**: Messages are stored in a database and are available when users reconnect.
-- **User List**: New users can see all previously connected users (who haven't disconnected) when they join.
-- **Notifications**: Users receive notifications for new messages.
+  ![Persistent Messaging](sec.png)
+
 - **User Activity Status**: Displays the current online status of users.
-- **Modern UI**: A visually appealing user interface for an enhanced chat experience.
+  ![User Activity Status](third.png)
+
+- **Saving Messages to Text**: Users can save chat messages to a text file.
+  ![Saving Messages](fourth.png)
+
+- **Deleting Messages**: Users can delete all chat messages.
+  ![Deleting Messages](fifth.png)
 
 ## Tech Stack
 
