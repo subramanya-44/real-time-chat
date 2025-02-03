@@ -6,6 +6,8 @@ const messages = document.getElementById("messages");
 const userList = document.getElementById("user-list");
 const currentUserDisplay = document.getElementById("current-user");
 const typingUserDisplay = document.getElementById("typing-user");
+const clearChatButton = document.getElementById("clear-chat");
+const saveChatButton = document.getElementById("save-chat");
 
 let currentUserName = prompt("Enter your name:");
 currentUserDisplay.innerText = currentUserName;
@@ -58,4 +60,22 @@ input.addEventListener("input", function() {
 // Listen for typing event to reset typing user display
 socket.on("stop typing", function() {
     typingUserDisplay.innerText = "";
+});
+
+// Clear chat messages
+clearChatButton.addEventListener("click", function() {
+    messages.innerHTML = '';
+    socket.emit("clear chat");
+});
+
+// Save chat messages to a text file
+saveChatButton.addEventListener("click", function() {
+    const chatContent = Array.from(messages.children).map(msg => msg.innerText).join("\n");
+    const blob = new Blob([chatContent], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "chat.txt";
+    a.click();
+    URL.revokeObjectURL(url);
 });

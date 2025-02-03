@@ -1,0 +1,19 @@
+{
+  "name": "real-time-chat",
+  "version": "1.0.0",
+  "description": "A real-time chat application built using **Node.js**, **Express**, and **Socket.io**. This application allows users to join a chat room, see who is currently online, and send messages in real time.  ![image](chat-screenshot.png) ## Features",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.13.0",
+    "socket.io": "^4.8.1"
+  }
+}
